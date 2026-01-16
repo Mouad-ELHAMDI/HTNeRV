@@ -156,7 +156,7 @@ High‑level layout:
 
 ---
 
-## 5. API Highlights (t‑NeRV)
+## 5. API Highlights (HTNeRV)
 
 The central class is `torchdr.neighbor_embedding.TNERV.TNERV`, a subclass of `SparseNeighborEmbedding` and ultimately `DRModule`. Key parameters:
 
