@@ -69,12 +69,12 @@ These extras are configured in `pyproject.toml` and pull platform‑appropriate 
 
 ## 3. Quick Start
 
-### 3.1. MNIST + t‑NeRV example
+### 3.1. MNIST + HTNeRV example
 
 The repository includes an example in `Example_MNIST.py`. It:
 
 1. loads MNIST via `DatasetLoader`,
-2. fits a 2‑D t‑NeRV embedding on CUDA using the KeOps backend,
+2. fits a 2‑D HTNeRV embedding on CUDA using the KeOps backend,
 3. prints shapes and runtime.
 
 ```python
@@ -109,7 +109,7 @@ python Example_MNIST.py
 
 > Note: `time` is part of the Python standard library; **no change to `pyproject.toml` is needed** for timing.
 
-### 3.2. Using t‑NeRV directly from `torchdr`
+### 3.2. Using HTNeRV directly from `torchdr`
 
 After installation, you can import `TNERV` wherever you like:
 
@@ -140,7 +140,7 @@ High‑level layout:
     - `tsne.py` – t‑SNE implementation.
     - `sne.py` – SNE variants.
     - `nerv.py` – NeRV implementation.
-    - `t_nerv.py` – t‑NeRV implementation (`TNERV`).
+    - `t_nerv.py` – HTNeRV implementation (`TNERV`).
   - `spectral_embedding/` – PCA, KernelPCA, PHATE, etc.
   - `affinity/` – affinity models:
     - `entropic.py` – `EntropicAffinity` (perplexity‑driven affinities).
@@ -153,8 +153,6 @@ High‑level layout:
 - **Top‑level utilities**
   - `Example_MNIST.py` – small runnable demo script.
   - `pyproject.toml` – packaging and dependency configuration.
-
-This structure is already close to what is expected of a NeurIPS/ICLR/ICML‑grade library; the main work is in tightening documentation, tests, examples, and experiment scripts.
 
 ---
 
