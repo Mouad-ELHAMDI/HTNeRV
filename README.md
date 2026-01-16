@@ -1,8 +1,8 @@
-## t‑NeRV: Heavy‑Tailed Neighborhood Retrieval Visualizer on TorchDR
+## HTNeRV: Heavy‑Tailed Neighborhood Retrieval Visualizer on TorchDR
 
-This repository provides a **PyTorch / TorchDR implementation of t‑NeRV**, a heavy‑tailed variant of the Neighborhood Retrieval Visualizer (NeRV) designed for dimensionality reduction.
+This repository provides a **PyTorch / TorchDR implementation of HTNeRV**, a heavy‑tailed variant of the Neighborhood Retrieval Visualizer (NeRV) designed for dimensionality reduction.
 
-The core implementation lives in the `torchdr` package (adapted and extended from the original TorchDR project), with t‑NeRV exposed as `torchdr.neighbor_embedding.TNERV`. A lightweight `datasetloader` module and example scripts make it easy to reproduce standard benchmarks (e.g. MNIST, single‑cell datasets, COIL‑100).
+The core implementation lives in the `torchdr` package (adapted and extended from the original TorchDR project), with HTNeRV exposed as `torchdr.neighbor_embedding.TNERV`. A lightweight `datasetloader` module and example scripts make it easy to reproduce standard benchmarks (e.g. MNIST, single‑cell datasets, COIL‑100).
 
 This codebase is meant to support the **t‑NeRV paper** and to serve as a clean, reusable library for follow‑up work.
 
@@ -10,7 +10,7 @@ This codebase is meant to support the **t‑NeRV paper** and to serve as a clean
 
 ## 1. Features at a Glance
 
-- **t‑NeRV implementation (`TNERV`)**
+- **HTNeRV implementation (`TNERV`)**
   - Information‑theoretic loss combining forward and reverse KL.
   - Heavy‑tailed Student‑t kernel in the low‑dimensional space.
   - Controls the trade‑off between recall and precision via `lambda_param`.
