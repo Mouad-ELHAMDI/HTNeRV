@@ -4,7 +4,7 @@ This repository provides a **PyTorch / TorchDR implementation of HTNeRV**, a hea
 
 The core implementation lives in the `torchdr` package (adapted and extended from the original TorchDR project), with HTNeRV exposed as `torchdr.neighbor_embedding.TNERV`. A lightweight `datasetloader` module and example scripts make it easy to reproduce standard benchmarks (e.g. MNIST, single‑cell datasets, COIL‑100).
 
-This codebase is meant to support the **t‑NeRV paper** and to serve as a clean, reusable library for follow‑up work.
+This codebase is meant to support the **HTNeRV paper** and to serve as a clean, reusable library for follow‑up work.
 
 ---
 
@@ -213,5 +213,5 @@ All loaders are **explicitly path‑based** (no machine‑specific defaults). Wh
 
 The repository is distributed under a **BSD 3‑Clause License** (see `LICENSE.txt`).  
 If you adapt or extend this code, please preserve existing copyright notices and
-provide clear attribution to both the original TorchDR authors and the t‑NeRV authors.
+provide clear attribution to both the original TorchDR authors and the HTNeRV authors.
 
